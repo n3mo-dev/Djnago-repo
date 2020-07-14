@@ -20,7 +20,7 @@ posts = [
 
 
 def homepage(request):
-    context = { 'posts' : 'posts'}
+    context = { 'posts' :  posts }
     return render(request, 'home.html', context)
 
 def about(request):
